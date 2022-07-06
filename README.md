@@ -1,0 +1,1 @@
+Temporary `Dynamic XCFramework without Guest Mode` pod to use on the Pocket Casts iOS app.
