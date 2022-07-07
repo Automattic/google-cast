@@ -12,5 +12,4 @@ Pod::Spec.new do |s|
     s.source            = { :http => 'http://localhost:8080/XCFrameworkTest.zip' } 
     s.ios.deployment_target = '10.0'
     s.ios.vendored_frameworks = 'GoogleCast.xcframework' # Your XCFramework
-    s.dependency 'Protobuf' # Third Party Dependency
 end 
