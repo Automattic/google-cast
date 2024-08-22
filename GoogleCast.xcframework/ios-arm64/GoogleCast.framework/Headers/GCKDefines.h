@@ -3,7 +3,7 @@
 #import <Availability.h>
 
 #define GCK_VERSION_MAJOR 4
-#define GCK_VERSION_MINOR 7
+#define GCK_VERSION_MINOR 8
 #define GCK_VERSION_FIX 1
 
 #define GCK_VERSION_IS_LESS_THAN(__major, __minor, __fix)               \
