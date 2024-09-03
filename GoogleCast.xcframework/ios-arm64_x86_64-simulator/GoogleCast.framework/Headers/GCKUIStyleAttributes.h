@@ -269,9 +269,13 @@ GCK_EXPORT
 /**
  * The style attributes for the view group representing the guest-mode pairing dialog.
  * Can be accessed as castViews.deviceControl.guestModePairingDialog
+ *
+ * @deprecated Guest mode feature has been removed. Using this API will have no affect on the
+ * functionality.
  */
 GCK_EXPORT
-@interface GCKUIStyleAttributesGuestModePairingDialog : GCKUIStyleAttributes
+__deprecated_msg("No-op API. This will be removed in a later release.")
+    @interface GCKUIStyleAttributesGuestModePairingDialog : GCKUIStyleAttributes
 @end
 
 /**
@@ -368,8 +372,7 @@ GCK_EXPORT
 @property(readonly, nonatomic) GCKUIStyleAttributesDeviceChooser *deviceChooser;
 
 /** The style attributes for the device connection controller. */
-@property(readonly, nonatomic)
-    GCKUIStyleAttributesConnectionController *connectionController;
+@property(readonly, nonatomic) GCKUIStyleAttributesConnectionController *connectionController;
 
 /**
  * The style attributes for the no devices available controller.
@@ -379,9 +382,14 @@ GCK_EXPORT
 @property(readonly, nonatomic)
     GCKUIStyleAttributesNoDevicesAvailableController *noDevicesAvailableController;
 
-/** The style attributes for the Guest Mode pairing dialog. */
-@property(readonly, nonatomic)
-    GCKUIStyleAttributesGuestModePairingDialog *guestModePairingDialog;
+/**
+ * The style attributes for the Guest Mode pairing dialog.
+ *
+ * @deprecated Guest mode feature has been removed. Using this API will have no affect on the
+ * functionality.
+ */
+@property(readonly, nonatomic) GCKUIStyleAttributesGuestModePairingDialog *guestModePairingDialog
+    __attribute((deprecated("No-op API. This will be removed in a later release.")));
 
 @end
 

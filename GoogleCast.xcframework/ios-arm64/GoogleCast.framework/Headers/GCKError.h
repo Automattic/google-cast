@@ -420,7 +420,13 @@ typedef NS_ENUM(NSInteger, GCKErrorCode) {
   /**
    * Error code indicating that a requested application can not be joined when reconnecting.
    */
-  GCKErrorCodeApplicationNotRunningForJoinWhenReconnecting = 107
+  GCKErrorCodeApplicationNotRunningForJoinWhenReconnecting = 107,
+
+  /**
+   * Error code indicating that a requested application is not currently running due to a mismatched
+   * applicationID.
+   */
+  GCKErrorCodeApplicationNotRunningWithApplicationIDMismatch = 108,
 };
 
 /**
